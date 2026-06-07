@@ -25,7 +25,7 @@ void setup() {
 
 void loop() {
   // ==========================================
-  // BƯỚC 1: LẮNG NGHE LỆNH TỪ BÀN PHÍM ĐỂ ĐỔI NHÃN
+  // BƯỚC 1: Gõ LỆNH TỪ BÀN PHÍM ĐỂ ĐỔI NHÃN
   // ==========================================
   // Kiểm tra xem bạn có gõ gì vào Serial Monitor không
   if (Serial.available() > 0) {
