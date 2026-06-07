@@ -22,7 +22,8 @@ Dự án ứng dụng Machine Learning kết hợp IoT để nhận diện và c
 2. Script Python lắng nghe MQTT, tiền xử lý và đưa vào mô hình `.pkl` để dự đoán trạng thái theo thời gian thực.
 3. Nếu phát hiện sự cố, hệ thống sẽ đẩy thông báo khẩn cấp và hú còi qua Telegram API (có cơ chế cooldown 10s chống spam).
 
-## 📁 Hướng dẫn chạy code
-1. Nạp code C++ vào mạch ESP32.
-2. Cài đặt các thư viện Python: `pip install paho-mqtt scikit-learn pandas numpy requests joblib`
-3. Chạy file `main.py` để hệ thống bắt đầu giám sát.
+## 📁 Hướng dẫn chạy dự án
+1. Nạp code thu_thap_data vào mạch ESP32 và thu thập data
+2. chạy file code train_model.py để hệ thống học 
+3. Cài đặt các thư viện Python: `pip install paho-mqtt scikit-learn pandas numpy requests joblib`
+4. Chạy file `main.py` để hệ thống bắt đầu giám sát.
