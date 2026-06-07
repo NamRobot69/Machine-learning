@@ -10,7 +10,7 @@ warnings.filterwarnings('ignore')
 # ==========================================
 # 1. CẤU HÌNH TELEGRAM BOT (BÁO ĐỘNG RUNG CHUÔNG)
 # ==========================================
-# ⚠️ QUAN TRỌNG: Hãy điền đoạn mã Token và Chat ID thật của bạn vào trong dấu ngoặc kép bên dưới
+#  Hãy điền đoạn mã Token và Chat ID thật của bạn vào trong dấu ngoặc kép bên dưới
 TELEGRAM_TOKEN = "8842424547:AAHsy6okplZYlXAx8P5PBZL-ug9MjS6J-hA"
 TELEGRAM_CHAT_ID = "8805710262"
 
@@ -59,7 +59,6 @@ def on_message(client, userdata, msg):
             print(f"🌡 {t}°C | 💧 {h}% | 💨 Gas: {gas:04.0f} | 🔆 Lửa: {flame:04.0f} ===> {status}")
             
             # --- GỬI DATA LÊN APP MQTT DASHBOARD ---
-            # Lưu ý: Gửi nguyên số thô để đồng hồ Gauge quay mượt
             client.publish("hizu/project/temp", f"{t}")
             client.publish("hizu/project/hum", f"{h}")
             client.publish("hizu/project/status", status)
